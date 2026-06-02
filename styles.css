@@ -117,9 +117,22 @@ nav a:hover { color: var(--green); }
 .hero {
   background:
     linear-gradient(135deg, rgba(15,31,20,0.25) 0%, rgba(26,58,39,0.15) 100%),
-    url('https://cdn.shopify.com/s/files/1/0738/1526/1439/files/514pc.webp?v=1778754525') center/cover no-repeat;
+    url('images/acemate-2-crop.webp') 65% center/cover no-repeat;
+  background-color: #0a0a0a;
   color: var(--white);
+  min-height: 100vh;
   padding: 100px 0 80px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background:
+      linear-gradient(135deg, rgba(15,31,20,0.25) 0%, rgba(26,58,39,0.15) 100%),
+      url('images/acemate-3-2.webp') center/cover no-repeat;
+    background-color: #0a0a0a;
+  }
 }
 .hero-inner {
   display: grid;
@@ -127,6 +140,17 @@ nav a:hover { color: var(--green); }
   gap: 60px;
   align-items: center;
 }
+.hero-text {
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .hero-text {
+    left: -15%;
+    top: -20%;
+  }
+}
+
 .eyebrow {
   font-size: 1.6rem;
   font-weight: 600;
@@ -143,7 +167,7 @@ nav a:hover { color: var(--green); }
 }
 .hero h1 span { color: var(--yellow); }
 .hero-sub { font-size: 1.1rem; color: #a8c4b0; max-width: 500px; margin-bottom: 36px; }
-.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 230px; }
 
 .badge-card {
   background: rgba(255,255,255,0.07);
